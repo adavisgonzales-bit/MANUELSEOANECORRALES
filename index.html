@@ -1,0 +1,116 @@
+<html>
+<head>
+    <title>ANIMACIONES CSS - ANIMATION</title>
+        <style>
+        h1{
+           font-family: "century gothic";
+           color: rgba(165, 42, 42, 0);
+           text-align: center;
+           
+           animation-name: titulo; /*titulo para la animacion */
+           animation-duration: 3s;/*duracion de la animacion*/
+           animation-iteration-count: 1;/* cantidad de veces que se realiza la animacion */
+           animation-fill-mode: forwards;/* indicas cual es el ultimo estado
+            que se queda */
+            animation-delay: 1s;
+        }
+
+        @keyframes titulo{
+            from{
+                color: rgba(165, 42, 42, 0);
+            }
+            to{
+                color: rgba(165, 42, 42, 1);
+            }
+        }
+
+        p{
+            text-align: center;
+            font-family: "century gothic";
+            font-weight: bold;
+
+           animation-name: texto; 
+           animation-duration: 3s;
+           animation-iteration-count: 1;
+           animation-fill-mode: backwards;
+           animation-delay: 3s;
+        }
+
+        @keyframes texto {
+            from{
+                color: rgba(0, 0, 0, 0);
+            }
+
+            to{
+                color: rgba(0, 0, 0, 1);
+            }
+        }
+
+        a{
+            text-align: center;
+            font-family: "century gothic";
+            font-weight: bold;
+
+           animation-name: texto; 
+           animation-duration: 3s;
+           animation-iteration-count: 1;
+           animation-fill-mode: backwards;
+           animation-delay: 3s;
+        }
+
+        @keyframes texto{
+            from{
+                color:black;
+
+            }
+            to{
+                color: rgb(15, 16, 80);
+            }
+        }
+
+        img{
+            height: 200px;
+            width: 400px;
+            display: block;/* centrar imagen */
+            margin: flex;/* centrar imagen */
+            opacity: 0;
+
+            animation: imagen 3s 3s 1 forwards;
+        }
+
+        @keyframes imagen {
+            from{
+                opacity: 0;
+            }
+            to{
+             opacity: 1;
+            }
+            
+        }
+
+        
+        </style>
+    </head>
+    <body>
+        <h1>Manuel Seoane Corrales</h1>
+        <P>Manuel Seoane Corrales: político, empresario y dirigente deportivo peruano</P>
+        <a><br>Manuel Seoane Corrales (Lima, 1900 – 1965)</a><br>
+            <br>fue un destacado político, 
+            <br>economista, empresario y dirigente 
+            <br>futbolístico peruano. 
+            <br>Ocupó el cargo de <a>Vicepresidente de la República</a> 
+            <br>durante el gobierno del general Manuel A. Odría (1950-1956), 
+            <br>además de desempeñarse como 
+            <br>Ministro de Hacienda y Comercio. 
+            <br>Como dirigente deportivo,
+            <br>fue presidente del <a>Club Universitario de Deportes</a> 
+            <br>en varias etapas y vicepresidente 
+            <br>de la <a>Confederación Sudamericana de Fútbol (Conmebol).</a> 
+            <br>También tuvo una activa participación en la 
+            <br>organización de torneos internacionales y 
+            <br>en la promoción del fútbol 
+            <br>profesional en <a>Perú.</a>
+        <img src="img/img.png">
+    </body>
+
+</html>
